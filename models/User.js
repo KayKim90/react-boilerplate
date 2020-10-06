@@ -15,6 +15,10 @@ const userSchema = mongoose.Schema({
     unique: true,
     lowercase: true,
   },
+  role: {
+    type: Number,
+    default: 0,
+  },
   token: { type: String },
   tokenExp: { type: Number },
 });
